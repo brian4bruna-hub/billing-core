@@ -101,3 +101,12 @@ pytest
 ---
 
 If you want, the next step can be a concrete template for your repo (Terraform module + Python service skeleton + CI workflow) targeting one Google Cloud runtime.
+
+## 8) Google Cloud Billing setup for project integrations
+
+If your Codex-generated changes deploy or run managed Google Cloud resources, verify billing is enabled on the target project before rollout.
+
+- Open Billing settings in Cloud Console for your target project (example path):
+  - `https://console.cloud.google.com/billing/.../settings?...&project=YOUR_PROJECT_ID`
+- Confirm the project is linked to an active billing account.
+- Validate required APIs are enabled after billing linkage.
